@@ -10,6 +10,15 @@ flutter build web --base-href=/oppsite/
 
 In `./build/web/`, copy all files in `./docs/`
 
+## Loading Page
+
+```html
+<body  >
+  <h1 style="color:black; font-family: Arial, Helvetica, sans-serif;">
+    loading site
+  </h1>
+  <img src="assets/images/oppkey_logo.jpg">
+```
 
 ## References
 
