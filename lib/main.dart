@@ -29,46 +29,46 @@ class MyHomePage extends StatelessWidget {
     bool mobile = size.width < 800;
     return Padding(
       padding: const EdgeInsets.all(20.0),
-      child: ListView(
-        children: [
-          Row(
-            children: [
-              Image.asset('images/oppkey_logo.jpg'),
-              !mobile
-                  ? Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Column(
-                        children: const [
-                          Text(
-                            'Oppkey',
-                            style: TextStyle(
-                                fontSize: 64, fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            'Developer Relations Consultants',
-                            style: TextStyle(fontSize: 30),
-                          ),
-                        ],
-                      ),
-                    )
-                  : Container(),
-            ],
-          ),
-          const SizedBox(
-            height: 40,
-          ),
-          const Text('Revenue is more than selling hardware. '
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Image.asset('images/oppkey_logo.jpg'),
+                !mobile
+                    ? Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          children: const [
+                            Text(
+                              'Oppkey',
+                              style: TextStyle(
+                                  fontSize: 64, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              'Developer Relations Consultants',
+                              style: TextStyle(fontSize: 30),
+                            ),
+                          ],
+                        ),
+                      )
+                    : Container(),
+              ],
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            const Text(
+              'Revenue is more than selling hardware. '
               'Expand into new markets. Create the most valuable '
               'industry-specific ecosystem in the world. '
-              'Grow the enormous value of your team, partners, and customers.'),
-          const SizedBox(
-            height: 40,
-          ),
-          SizedBox(
-            width: size.width - 40,
-            child: Image.asset('images/oppkey_clients.png'),
-          ),
-        ],
+              'Grow the enormous value of your team, partners, and customers.',
+              style: TextStyle(fontSize: 20),
+            ),
+            Image.asset('images/oppkey_clients.png'),
+          ],
+        ),
       ),
     );
   }
