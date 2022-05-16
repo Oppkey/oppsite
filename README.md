@@ -2,15 +2,9 @@
 
 [Demo Site](https://oppkey.github.io/oppsite/)
 
-## Building Web Site
-
-```text
-flutter build web --base-href=/oppsite/
-```
-
-In `./build/web/`, copy all files in `./docs/`
-
 ## Loading Page
+
+The loading page is constructed on `web/index.html`.
 
 ```html
 <body  >
@@ -19,6 +13,21 @@ In `./build/web/`, copy all files in `./docs/`
   </h1>
   <img src="assets/images/oppkey_logo.jpg">
 ```
+
+## Building Web Site
+
+```text
+flutter build web --base-href=/oppsite/
+```
+
+In `./build/web/`, copy all files in `./docs/`
+
+Push up to GitHub.
+
+At the moment, there is a problem with the `assets/` folder.  You must
+manually move the assets up one level to avoid `assets/assets`.
+
+
 
 ## References
 

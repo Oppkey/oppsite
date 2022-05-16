@@ -60,8 +60,8 @@ class MyHomePage extends StatelessWidget {
               height: 40,
             ),
             const Text(
-              'Revenue is more than selling hardware. '
-              'Expand into new markets. Create the most valuable '
+              'Expand from hardware revenue to software and services. '
+              'Take on new markets. Create the most valuable '
               'industry-specific ecosystem in the world. '
               'Grow the enormous value of your team, partners, and customers.',
               style: TextStyle(fontSize: 20),
